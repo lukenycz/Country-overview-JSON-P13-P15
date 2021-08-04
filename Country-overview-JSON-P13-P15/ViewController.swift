@@ -13,7 +13,9 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.title = "Countries"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.backgroundColor = .systemRed
         parseJson()
     }
 
@@ -30,7 +32,17 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if let vc = storyboard?.instantiateViewController(identifier: "detail") as? DetailViewController {
+            let countryDetail = country?.country[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+            print(countryDetail!)
+            vc.nameCountry = countryDetail?.name ?? ""
+            vc.descriptionCountry = countryDetail?.description ?? ""
+            vc.currencyCountry = countryDetail?.currency ?? ""
+            vc.populationCountry = countryDetail?.population ?? 0.0
+            vc.funFactCountry = countryDetail?.funFact ?? ""
+            
+        }
     }
     private func parseJson() {
         guard let path = Bundle.main.path(
