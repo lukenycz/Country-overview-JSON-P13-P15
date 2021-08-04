@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,6 +37,91 @@
             </objects>
             <point key="canvasLocation" x="676.81159420289862" y="50.892857142857139"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Qos-fS-4tQ">
+            <objects>
+                <viewController storyboardIdentifier="detail" id="Tje-mS-8P7" customClass="DetailViewController" customModule="Country_overview_JSON_P13_P15" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D0V-UO-2sJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGQ-KH-efs">
+                                <rect key="frame" x="20" y="69" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tdw-Ha-QZA">
+                                <rect key="frame" x="20" y="98" width="374" height="278"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNi-94-D3j">
+                                <rect key="frame" x="20" y="384" width="374" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="sbn-aU-HA9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="091-dE-ZRy">
+                                <rect key="frame" x="20" y="416" width="374" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="8mP-Om-d7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4O1-oW-oYp">
+                                <rect key="frame" x="20" y="448" width="374" height="336"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="336" id="LGg-sm-GAP"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CiX-Df-1ME"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4O1-oW-oYp" firstAttribute="bottom" secondItem="CiX-Df-1ME" secondAttribute="bottom" constant="-78" id="5BB-dl-cx3"/>
+                            <constraint firstItem="FGQ-KH-efs" firstAttribute="trailing" secondItem="tdw-Ha-QZA" secondAttribute="trailing" id="BU4-QZ-CtO"/>
+                            <constraint firstItem="SNi-94-D3j" firstAttribute="leading" secondItem="091-dE-ZRy" secondAttribute="leading" id="CbZ-4O-Qwk"/>
+                            <constraint firstItem="091-dE-ZRy" firstAttribute="trailing" secondItem="4O1-oW-oYp" secondAttribute="trailing" id="Jvh-gg-RQK"/>
+                            <constraint firstItem="SNi-94-D3j" firstAttribute="trailing" secondItem="091-dE-ZRy" secondAttribute="trailing" id="K0T-7n-3Zu"/>
+                            <constraint firstItem="091-dE-ZRy" firstAttribute="leading" secondItem="4O1-oW-oYp" secondAttribute="leading" id="NHB-Xk-ljS"/>
+                            <constraint firstItem="4O1-oW-oYp" firstAttribute="top" secondItem="091-dE-ZRy" secondAttribute="bottom" constant="8" id="RMR-IN-Avx"/>
+                            <constraint firstItem="FGQ-KH-efs" firstAttribute="trailing" secondItem="D0V-UO-2sJ" secondAttribute="trailingMargin" id="Spe-FL-W4l"/>
+                            <constraint firstItem="FGQ-KH-efs" firstAttribute="top" secondItem="CiX-Df-1ME" secondAttribute="top" constant="25" id="Vdp-5h-tob"/>
+                            <constraint firstItem="091-dE-ZRy" firstAttribute="top" secondItem="SNi-94-D3j" secondAttribute="bottom" constant="8" id="X6B-M9-CzT"/>
+                            <constraint firstItem="tdw-Ha-QZA" firstAttribute="top" secondItem="FGQ-KH-efs" secondAttribute="bottom" constant="8" id="dQN-7u-mOr"/>
+                            <constraint firstItem="tdw-Ha-QZA" firstAttribute="leading" secondItem="SNi-94-D3j" secondAttribute="leading" id="dcw-Hg-0y4"/>
+                            <constraint firstItem="tdw-Ha-QZA" firstAttribute="trailing" secondItem="SNi-94-D3j" secondAttribute="trailing" id="eNq-lh-3k5"/>
+                            <constraint firstItem="FGQ-KH-efs" firstAttribute="leading" secondItem="tdw-Ha-QZA" secondAttribute="leading" id="jax-ag-oYm"/>
+                            <constraint firstItem="FGQ-KH-efs" firstAttribute="leading" secondItem="D0V-UO-2sJ" secondAttribute="leadingMargin" id="nXH-ql-PNe"/>
+                            <constraint firstItem="SNi-94-D3j" firstAttribute="top" secondItem="tdw-Ha-QZA" secondAttribute="bottom" constant="8" id="zaI-wF-Icj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currencyLabel" destination="SNi-94-D3j" id="E8a-XG-RLR"/>
+                        <outlet property="descriptionText" destination="tdw-Ha-QZA" id="ra0-k9-vZr"/>
+                        <outlet property="funFactText" destination="4O1-oW-oYp" id="0Iw-lg-BAh"/>
+                        <outlet property="nameLabel" destination="FGQ-KH-efs" id="yuy-zf-d1c"/>
+                        <outlet property="populationLabel" destination="091-dE-ZRy" id="zlE-sI-3iL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQu-yv-wxz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866.6666666666667" y="50.892857142857139"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="tWe-tX-jcn">
             <objects>
@@ -56,6 +142,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
