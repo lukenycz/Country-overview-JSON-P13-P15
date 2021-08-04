@@ -1,0 +1,37 @@
+{
+    "country": [{
+            "name": "Poland",
+            "description": "Poland is located in the very centre of Europe. With the total area of 312,679 km² (120,728 sq mi) it's the seventh biggest country on the continent. ... Poland borders 7 countries: Germany on the west, Czech Republic and Slovakia on the south, Ukraine, Belarus and Lithuania on the east, and Russia on the north. ",
+            "currency": "PLN",
+            "population": 37.97,
+            "funFact": "Poland has the second oldest University in Europe."
+        },
+        {
+            "name": "Germany",
+            "description": "Germany is a country located in the heart of Western Europe. ... Germany has a mixed economic system which includes a variety of private freedom, combined with centralized economic planning and government regulation. Germany is a member of the European Union (EU). ",
+            "currency": "EUR",
+            "population": 83.02,
+            "funFact": "65% of the highways in Germany (Autobahn) have no speed limit"
+        },
+        {
+            "name": "Great Britain",
+            "description": "Politically, Great Britain refers to the whole of England, Scotland and Wales in combination, but not Northern Ireland; it includes islands, such as the Isle of Wight, Anglesey, the Isles of Scilly, the Hebrides and the island groups of Orkney and Shetland, that are part of England, Wales, or Scotland.",
+            "currency": "GBP",
+            "population": 66.65,
+            "funFact": "The U.K. has only 15 National Parks, but they only cover 8% of British land."
+        },
+        {
+            "name": "Russia",
+            "description": "Russia, the largest country in the world, occupies one-tenth of all the land on Earth. It spans 11 time zones across two continents (Europe and Asia) and has coasts on three oceans (the Atlantic, Pacific, and Arctic). The Russian landscape varies from desert to frozen coastline, tall mountains to giant marshes.",
+            "currency": "RUB",
+            "population": 144.4,
+            "funFact": "Moscow has more billionaires per capita than anywhere else in the world."
+        },
+        {
+            "name": "Croatia",
+            "description": "Croatia is a Central European and Mediterranean country, bordering Slovenia to the west, Hungary to the north, Serbia to the east and Bosnia and Herzegovina to the south; the country also has a long maritime border with Italy in the Adriatic Sea. These borders total 2,028 km altogether.",
+            "currency": "KN",
+            "population": 4.076,
+            "funFact": "Croatia has 1246 islands, isles and imlets for you to sail through."
+        }]
+}
